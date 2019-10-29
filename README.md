@@ -13,3 +13,23 @@ As an example it also provides few utility functions:
 In order to define a new fold, first define `Stepper` datatype which will be a proxy determining
 which instance of `Step` should be used by `Fold`. The `Stepper` must implement `Step` class.
 Please note that the result of `step` function must be a `Category` for `Fold` to work.
+
+## Install
+
+```dhall
+let additions =
+  { record-fold =
+    { dependencies =
+      [ "prelude"
+      , "console"
+      , "typelevel-prelude"
+      , "record"
+      , "maybe"
+      , "tuples"
+      , "arrays"
+      ]
+    , repo = "https://github.com/mbuszka/purescript-record-fold.git"
+    , version = "c543d1774f8f0543980ea8ff95cac33e8625707d"
+    }
+  }
+```

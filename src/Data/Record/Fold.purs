@@ -27,8 +27,9 @@ import Record (get)
 import Record.Builder (Builder, build, insert)
 import Data.Symbol (class IsSymbol, SProxy(..), reflectSymbol)
 import Data.Tuple (Tuple(..))
+import Prim.RowList (class RowToList, Cons, Nil, kind RowList)
 import Prim.Row (class Lacks, class Cons)
-import Type.Row (class RowToList, Cons, Nil, RLProxy(..), kind RowList)
+import Type.Data.RowList (RLProxy(..))
 
 class Step stepper (lbl :: Symbol) val step | val -> step where
   step :: stepper -> (SProxy lbl) -> val -> step
