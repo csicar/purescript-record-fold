@@ -29,7 +29,7 @@ let additions =
       , "arrays"
       ]
     , repo = "https://github.com/mbuszka/purescript-record-fold.git"
-    , version = "c543d1774f8f0543980ea8ff95cac33e8625707d"
+    , version = "v0.5.0"
     }
   }
 ```
